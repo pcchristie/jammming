@@ -1,0 +1,34 @@
+.App {
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "login login"
+    "search search"
+    "info info"
+    "results playlist";
+  column-gap: 30px;
+}
+
+.HeaderBanner {
+  grid-area: header;
+}
+
+.Login {
+  grid-area: login;
+}
+
+.SearchBar {
+  grid-area: search;
+}
+
+.InfoBanner {
+  grid-area: info;
+}
+
+.SearchResults {
+  grid-area: results;
+}
+
+.Playlist {
+  grid-area: playlist;
+}
