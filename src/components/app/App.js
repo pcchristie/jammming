@@ -11,9 +11,6 @@ import Spotify from '../../utlils/spotify';
 // TOTOD: Can we make the playlist title more like an editable <h2> than an input field? Perhaps this is just CSS/styling work.
 
 const url = 'https://api.spotify.com/v1/search?&q='
-const queryparams = ''
-const apiId = '54b0761d570c4af584b806cb816f03b0'
-const apiSecret = '6eaf2edf150b4e9b90b630b5d0f38d8f'
 
 function App() {
 
@@ -160,7 +157,7 @@ async function handleSubmit(e) {
           <Playlist className="Playlist" playlist={playlist} playlistData={playlistData} handleRemove={handleRemove} handleTitleChange={handleTitleChange} createPlaylist={Spotify.createPlaylist} accessToken={accessToken} userID={userID} title={title}/>
         </>
       ) : (
-        <button className="Login" onClick={login}>Log in with Spotify <img src={process.env.PUBLIC_URL + '/media/spot_white_filled_100.png'} style={{height: '30px', width: '30px'}} />
+        <button className="Login" onClick={login}>Log in with Spotify <img src={process.env.PUBLIC_URL + '/media/spot_white_filled_100.png'} style={{height: '30px', width: '30px'}} alt="spotify logo"/>
         </button>
       )}
     </div>
