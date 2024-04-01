@@ -1,0 +1,85 @@
+.track {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+track {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.addContainer {
+    height: 2rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.input {
+    height: 2rem;
+    width: 18rem;
+    background-color: rgb(224, 225, 221);
+    box-shadow: none;
+    border-bottom: 1px solid darkgrey;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 0;
+    margin: 0;
+}
+
+.input:focus {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    box-shadow: none;
+    outline: none;
+    transform: none;
+    border-bottom: 1px solid black;
+    padding: 0;
+    margin: 0;
+}
+
+.button {
+    background-color: rgb(65, 90, 119);
+    color: white;
+    font-weight: 600;
+    height: 2rem;
+    width: 175px;
+    border-bottom: 1px solid darkgrey;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    box-shadow: none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:active {
+    background-color: rgb(65, 90, 119);
+    color: white;
+    font-weight: 500;
+    height: 2rem;
+    width: 175px;
+    border-bottom: 1px solid black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    box-shadow: none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    margin-left: 5px;
+}

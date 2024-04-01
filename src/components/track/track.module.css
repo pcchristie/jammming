@@ -1,0 +1,58 @@
+.title {
+    font-size: 1rem;
+    font-weight: 550;
+    margin: 0.1rem none;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.artist {
+    font-size: 0.8rem;
+    font-style: italic;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100%;
+    overflow: auto;
+    margin: 10px 0px;
+}
+
+p {
+    margin: 0.75rem 0;
+}
+
+.addButton, .removeButton {
+    background-color: rgb(224, 225, 221);
+    font-size: 0.75rem;
+    width: 4rem;
+    height: 1.25rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid hsla(0, 0%, 50%, 0.5);
+    border-radius: 3px;
+}
+
+.addButton:hover {
+    background-color: rgba(218, 255, 164, 0.5);
+    border: 1px solid rgb(50, 50, 50);
+
+}
+
+.removeButton:hover {
+    background-color: rgba(255, 138, 138, 0.5);
+    border: 1px solid rgb(50, 50, 50);
+}
+
+/* TODO: Trying to work out how to truncate text with ellipses. */

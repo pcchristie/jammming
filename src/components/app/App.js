@@ -152,14 +152,17 @@ async function handleSubmit(e) {
   return (
     <div className="App">
       <HeaderBanner  className="HeaderBanner"/>
-      <button className="Login" onClick={login}>Log In</button>
-      {/* <button className='getAccess' onClick={getToken}>Get Access Token</button> */}
-      <SearchBar className="SearchBar" search={search} setSearch={setSearch} handleSubmit={handleSubmit}/>
-      <InfoBanner className="InfoBanner"/>
-      <SearchResults className="SearchResults" results={results} handleAdd={handleAdd}/>
-      <Playlist className="Playlist" playlist={playlist} playlistData={playlistData} handleRemove={handleRemove} handleTitleChange={handleTitleChange} createPlaylist={Spotify.createPlaylist} accessToken={accessToken} userID={userID} title={title}/>
-      {/* <p>The authcode is {authCode ? 'populated' : 'empty'}</p>
-      <p>The access token is {accessToken ? 'populated with' + accessToken : 'empty'}</p>  */}
+      <InfoBanner className="InfoBanner" accessToken={accessToken}/>
+      {accessToken ? (
+        <>
+          <SearchBar className="SearchBar" search={search} setSearch={setSearch} handleSubmit={handleSubmit}/>
+          <SearchResults className="SearchResults" results={results} handleAdd={handleAdd}/>
+          <Playlist className="Playlist" playlist={playlist} playlistData={playlistData} handleRemove={handleRemove} handleTitleChange={handleTitleChange} createPlaylist={Spotify.createPlaylist} accessToken={accessToken} userID={userID} title={title}/>
+        </>
+      ) : (
+        <button className="Login" onClick={login}>Log in with Spotify <img src={process.env.PUBLIC_URL + '/media/spot_white_filled_100.png'} style={{height: '30px', width: '30px'}} />
+        </button>
+      )}
     </div>
   );
 }

@@ -1,15 +1,16 @@
 import React from "react";
+import styles from './track.module.css'
 
 function Track({trackObj, title, artist, isResult, handleAdd, handleRemove}) {
         
     return (
-        <div>
-            <p>{title}</p>
-            <p>{artist}</p>
+        <div className={styles.container}>
+            <p className={styles.title}>{title}</p>
+            <p className={styles.artist}>{artist}</p>
             {isResult ? (
-                <button onClick={() => handleAdd(trackObj)}>ADD</button>
+                <button className={styles.addButton} onClick={() => handleAdd(trackObj)}>Add</button>
             ) : (
-                <button onClick={() => handleRemove(trackObj)}>DEL</button>
+                <button className={styles.removeButton} onClick={() => handleRemove(trackObj)}>Remove</button>
             )}
         </div>
     )
