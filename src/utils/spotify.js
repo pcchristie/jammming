@@ -25,7 +25,7 @@ const Spotify = {
         const codeChallenge = base64encode(hashed);
         
         const clientId = '54b0761d570c4af584b806cb816f03b0';
-        const redirectUri = 'http://localhost:3000/callback';
+        const redirectUri = 'https://pccjammming.netlify.app/callback';
         
         const scope = 'playlist-modify-private playlist-modify-public';
         const authUrl = new URL("https://accounts.spotify.com/authorize")
@@ -55,7 +55,7 @@ const Spotify = {
     getToken: async function(authCode) {
     
         const clientId = '54b0761d570c4af584b806cb816f03b0';
-        const redirectUri = 'http://localhost:3000/callback';
+        const redirectUri = 'https://pccjammming.netlify.app/callback';
         const url = 'https://accounts.spotify.com/api/token'
         const authCodeToSend = authCode;
 
