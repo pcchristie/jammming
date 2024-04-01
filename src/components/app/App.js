@@ -5,7 +5,7 @@ import Playlist from '../playlist/playlist'
 import SearchResults from '../searchresults/searchresults';
 import HeaderBanner from '../headerbanner/headerbanner';
 import InfoBanner from '../infobanner/infobanner';
-import Spotify from '../../utlils/spotify';
+import Spotify from '../../utils/spotify';
 
 // TODO: Can I implement a sorting feature?
 // TOTOD: Can we make the playlist title more like an editable <h2> than an input field? Perhaps this is just CSS/styling work.
